@@ -1,10 +1,7 @@
-const API_KEY = "AIzaSyDlugRQle22azxHxGyAHhwRbtD1oIoFvlk";
-//const API_URL = `https://www.googleapis.com/books/v1/volumes?q=garcia+marquez&key=${API_KEY}`;
-
-async function getdata(searchParam = "search-terms", bookId = ""){
+async function getdata(searchParam, bookId = ""){
   try {
     let API_URL = ""
-    bookId ? API_URL = `https://www.googleapis.com/books/v1/volumes/${bookId}` : API_URL = `https://www.googleapis.com/books/v1/volumes?q=${searchParam}&key=${API_KEY}`;
+    bookId ? API_URL = `https://www.googleapis.com/books/v1/volumes/${bookId}` : API_URL = `https://www.googleapis.com/books/v1/volumes?q=${searchParam}`;
     console.log(API_URL);
     const response = await fetch(API_URL);
     const data = await response.json();
