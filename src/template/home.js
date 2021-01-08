@@ -1,10 +1,12 @@
 import getdata from '../utils/getdata';
+import router from '../router';
+
+
 
 async function home(search) {
   try {
-    search = search ? search : "search"
-    console.log(search);
-    const data = await getdata(search);
+    let paramSearch = search ? search : "search"
+    const data = await getdata(paramSearch);
     const books = await data.items;
     return `
       <div class="container">
@@ -25,4 +27,6 @@ async function home(search) {
 
 
 
-export default home;
+export {
+  home
+};

@@ -1,13 +1,13 @@
 import gethash from './utils/gethash';
-import home from './template/home';
+import { home } from './template/home';
 import book from './template/book';
 import about from './template/about';
 import contact from './template/contact';
 import notfound from './template/notfound';
 
-async function router(search) {
+async function router(test) {
   const routes = {
-    home: home(search),
+    home: home(test),
     book: book(),
     about: about(),
     contact: contact(),
@@ -20,4 +20,15 @@ async function router(search) {
   $CONTAINER.innerHTML = await routes[page] || routes.error;
 }
 
-export default router;
+async function reloadhome(search){
+  try {
+    await router(search);
+  } catch (error) {
+    console.error("Reload error " + error.message);
+  }
+}
+
+export {
+  router,
+  reloadhome
+}
