@@ -1,7 +1,4 @@
 import getdata from '../utils/getdata';
-import router from '../router';
-
-
 
 async function home(search) {
   try {
@@ -27,6 +24,4 @@ async function home(search) {
 
 
 
-export {
-  home
-};
+export default home;

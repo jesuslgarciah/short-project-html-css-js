@@ -1,13 +1,13 @@
 import gethash from './utils/gethash';
-import { home } from './template/home';
+import home from './template/home';
 import book from './template/book';
 import about from './template/about';
 import contact from './template/contact';
 import notfound from './template/notfound';
 
-async function router(test) {
+async function router(search) {
   const routes = {
-    home: home(test),
+    home: home(search),
     book: book(),
     about: about(),
     contact: contact(),
