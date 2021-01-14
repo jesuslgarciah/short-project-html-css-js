@@ -5,7 +5,11 @@ import about from './template/about';
 import contact from './template/contact';
 import notfound from './template/notfound';
 
+
+
 async function router(search) {
+  if (typeof search !== 'string') search = 'books'
+
   const routes = {
     home: home(search),
     book: book(),
@@ -16,8 +20,9 @@ async function router(search) {
 
   const hash = gethash();
   let page = hash ? hash : "home";
+  console.log(page);
   const $CONTAINER = document.querySelector(".main");
-  $CONTAINER.innerHTML = await routes[page] || routes.error;
+  $CONTAINER.innerHTML = await routes[page] || await routes.error;
 }
 
 async function reloadhome(search){

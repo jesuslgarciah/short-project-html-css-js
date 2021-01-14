@@ -3,7 +3,8 @@ import getdata from '../utils/getdata'
 async function book() {
   try {
     const hash = location.hash.split("/");
-    const id = hash[hash.length - 1];
+    let id = hash[hash.length - 1];
+    if (!id) id = "O8kOAQAAIAAJ";
     const bookInfo = await getdata("", id)
     return `
       <div>
