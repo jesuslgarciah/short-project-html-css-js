@@ -8,7 +8,9 @@ import notfound from './template/notfound';
 
 
 async function router(search) {
-  if (typeof search !== 'string') search = 'books'
+  if (typeof search !== 'string') {
+    search = localStorage.getItem('bookSearch') || 'books'
+  }
 
   const routes = {
     home: home(search),

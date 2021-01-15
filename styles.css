@@ -121,6 +121,8 @@ a:hover {
 }
 
 .contact ul {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-around;
 }
@@ -132,7 +134,7 @@ a:hover {
   }
   ul a {
     font-size: 14px;
-  }  
+  }
   .container{
     grid-gap: 1%;
   }
@@ -142,6 +144,11 @@ a:hover {
 
   .container img {
     width: 100%;
+  }
+
+  .contact img {
+    width: 60px;
+    height: 60px;
   }
 }
 

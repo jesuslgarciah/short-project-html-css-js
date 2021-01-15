@@ -6,28 +6,28 @@ function contact() {
       <div class="social-network">
         <ul>
           <li>
-            <a href="">
-              <img src="" alt="github"/>
+            <a href="https://github.com/jesuslgarciah" target="_blank">
+              <img src="https://img.icons8.com/material-sharp/96/000000/github.png" alt="github"/>
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="" alt="linkedin"/>
+            <a href="https://www.linkedin.com/in/jesus-leonardo-garcia-hoyos-3841b8151/" target="_blank">
+              <img src="https://img.icons8.com/material-sharp/96/000000/linkedin.png" alt="linkedin"/>
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="" alt="instagram"/>
+            <a href="https://twitter.com/jesuslgarciah" target="_blank">
+              <img src="https://img.icons8.com/material-sharp/96/000000/twitter.png" alt="twitter"/>
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="" alt="twitter"/>
+            <a href="https://instagram.com/jesuslgarciah" target="_blank">
+              <img src="https://img.icons8.com/material-outlined/96/000000/instagram-new--v1.png"/>
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="" alt="facebook"/>
+            <a href="https://facebook.com/jesuslgarciah" target="_blank">
+              <img src="https://img.icons8.com/material-sharp/96/000000/facebook.png" alt="facebook"/>
             </a>
           </li>
         </ul>
