@@ -22,7 +22,6 @@ async function router(search) {
 
   const hash = gethash();
   let page = hash ? hash : "home";
-  console.log(page);
   const $CONTAINER = document.querySelector(".main");
   $CONTAINER.innerHTML = await routes[page] || await routes.error;
 }
