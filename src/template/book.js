@@ -12,7 +12,7 @@ async function book() {
       </div>
     `
   } catch (error) {
-    console.error(`Error at list book, test : ${error.message}`)
+    console.error(`Error at list book : ${error.message}`)
   }
 }
 
