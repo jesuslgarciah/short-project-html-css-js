@@ -12,11 +12,11 @@ async function book() {
         <div class="book-info">
           <h2>${bookInfo.volumeInfo.title}</h2>
           <div class="left-right">
-            <img src="${bookInfo.volumeInfo.imageLinks.thumbnail}"/>
+            <img src="${bookInfo.volumeInfo.imageLinks?.thumbnail}"/>
             <div class="author">
               <h3>Authors: </h3>
               <p>
-                ${authors.map(author =>
+                ${authors && authors.map(author =>
                 `${author}`
                 ).join(', ')}
               </p>

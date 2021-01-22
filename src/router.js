@@ -9,7 +9,7 @@ import notfound from './template/notfound';
 
 async function router(search) {
   if (typeof search !== 'string') {
-    search = localStorage.getItem('bookSearch') || 'books'
+    search = localStorage.getItem('bookSearch') || "testing";
   }
 
   const routes = {

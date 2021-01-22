@@ -6,6 +6,7 @@ search.addEventListener("submit", (e) => {
   const textBookSearch = document.getElementById("book-search").value;
   const bookSearch = textBookSearch.replaceAll(' ', '+');
   localStorage.setItem("bookSearch", bookSearch);
+  window.location.href = "/short-project-html-css-js"
   reloadhome(bookSearch);
 })
 

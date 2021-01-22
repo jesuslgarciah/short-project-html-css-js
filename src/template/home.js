@@ -6,10 +6,10 @@ async function home(search) {
     const books = await data.items;
     return `
       <div class="container">
-        ${books.map(book => `
+        ${books && books.map(book => `
           <div class="card">
             <a href="#/book/${book.id}">
-              <img src="${book.volumeInfo.imageLinks.smallThumbnail}"/>
+              <img src="${book.volumeInfo.imageLinks?.smallThumbnail}"/>
               <h5>${book.volumeInfo.title}</h5>
             </a>
           </div>
