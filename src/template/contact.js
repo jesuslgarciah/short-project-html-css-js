@@ -11,7 +11,7 @@ function contact() {
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/jesus-leonardo-garcia-hoyos-3841b8151/" target="_blank">
+            <a href="https://www.linkedin.com/in/jesuslgarciah/" target="_blank">
               <img src="https://img.icons8.com/material-sharp/96/000000/linkedin.png" alt="linkedin"/>
             </a>
           </li>
